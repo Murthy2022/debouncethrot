@@ -1,4 +1,4 @@
-let arr1 = [2 ,3,4,5,2,3]
+let arr1 = [2 ,3,4,5,2,3,3,3]
 
 //Remove duplicates using Set
 
@@ -25,8 +25,6 @@ console.log(newArr2)
 
 let newArr3 = []
 
-let count=1
-
 for(i=0;i<arr1.length;i++){
     let isDuplicate=false
   for(j=0 ; j<newArr3.length;j++){
@@ -41,3 +39,16 @@ for(i=0;i<arr1.length;i++){
 }
 
 console.log(newArr3)
+
+
+
+let newObj = arr1.reduce((acc,curr)=>{
+if(acc[curr]){
+    acc[curr]=acc[curr]+1
+}else{
+    acc[curr]=1
+}
+return acc;
+},{});
+
+console.log(newObj)
