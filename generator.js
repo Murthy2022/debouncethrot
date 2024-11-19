@@ -6,11 +6,11 @@ function* myGenerator(){
 }
 
 const gen = myGenerator();
-// console.log(gen.next())
-// console.log(gen.next())
-// console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
 
-console.log(...gen)
+//console.log(...gen)
 
 
 function* numbers() {
