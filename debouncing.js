@@ -8,9 +8,8 @@ function handleSearch () {
 }
 
 
-
 function doSomemagic(fn,d){
-    
+        
 let timer;
 
     return function(){
@@ -19,10 +18,6 @@ let timer;
         timer=setTimeout(()=> {
             fn.apply(context,args)
         },d)
-
     }
 }
-
-
-
 const betterFunction = doSomemagic(handleSearch,300)

@@ -8,14 +8,11 @@ function normafn() {
 }
 
 
-
 function doMagicForThrotalling(fnc,delay){
 
     let flag=1
-
     return function(){
         let context=this , args=arguments
-
         if(flag){
             fnc.apply(context,args)
             flag=0;
@@ -26,12 +23,5 @@ function doMagicForThrotalling(fnc,delay){
  }
 }
 
-
-
-
 const modifiedFUnction = doMagicForThrotalling(normafn,3000)
-
-
-
-
 window.addEventListener("resize",modifiedFUnction)

@@ -1,4 +1,4 @@
-let arr1 = [2 ,3,4,5,2,3,3,3]
+let arr1 = [2,3,4,5,2,3,3,3]
 
 //Remove duplicates using Set
 
@@ -6,7 +6,7 @@ let newArr1 = [...new Set(arr1)]
 console.log(newArr1)
 
 
-//Remove duplicates using forEach and include
+//Remove duplicates using forEach and includes
 
 let newArr2 = [];
 
@@ -15,7 +15,6 @@ arr1.forEach((value) => {
 if(!newArr2.includes(value)){
     newArr2.push(value)
 }
-
 })
 
 console.log(newArr2)
@@ -41,7 +40,6 @@ for(i=0;i<arr1.length;i++){
 console.log(newArr3)
 
 
-
 let newObj = arr1.reduce((acc,curr)=>{
 if(acc[curr]){
     acc[curr]=acc[curr]+1
@@ -52,3 +50,24 @@ return acc;
 },{});
 
 console.log(newObj)
+
+
+let arr2 = [1,2,3,4]
+
+let reducedArray = arr2.reduce((acc,curr) => {
+acc = acc + curr
+return acc
+},0)
+
+
+console.log(reducedArray)
+
+
+console.log(undefined || null) //null
+console.log(null || undefined) // undefined
+console.log(undefined && null) //undefined
+console.log(null && undefined) // null
+
+
+console.log(undefined || null && 2 && 3 && undefined)  //null
+

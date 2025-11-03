@@ -14,12 +14,12 @@ console.log(Person.address.city)
 
  const shallowcopy = Object.assign({},Person)
 
- //console.log(shallowcopy.address.city)
+ console.log(shallowcopy.address.city)
 
-// shallowcopy.address.city="Delhi"
+shallowcopy.address.city="Delhi"
 
-// console.log(shallowcopy.address.city)
-// console.log(Person.address.city)
+console.log(shallowcopy.address.city)
+console.log(Person.address.city)
 
 
 shallowcopy.name="Sowji"

@@ -1,6 +1,6 @@
 let arr = ["JSN" , "Murthy"]
 let obj = {
-    name : "Mjruthy",
+    name : "Murthy",
     city : "Hyderabad",
     age : 28,
     getIntro : function(){
@@ -20,13 +20,54 @@ console.log(obj2.name)
 console.log(obj2.sayAge())
 
 
+
+// function Animal(name){
+//     name=this.name
+// }
+
+// Animal.prototype.saiHi = function(){
+//     console.log("Hi - " + this.name)
+// }
+
+// const dog = new Animal('Buddy')
+// dog.saiHi()
+
+
+
+
 function Animal(name){
-    this.name = name;
+    name = this.name
 }
 
-Animal.prototype.sayHi = function(){
-    console.log("My name is" + this.name)
+Animal.prototype.saiHi = function(){
+    console.log('Hi' + this.name)
 }
 
-let dog=new Animal("Buddy");
-dog.sayHi()
+const dog = new Animal('Buddy')
+dog.saiHi()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
